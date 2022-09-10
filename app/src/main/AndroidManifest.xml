@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hall_booking" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/hallicon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hallicon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hall_Booking"
+        tools:targetApi="31" >
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:parentActivityName=".Dashboard"/>
+        <activity
+            android:name=".forgot"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Booking"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".booking"
+            android:exported="false" />
+        <activity
+            android:name=".BookHall"
+            android:exported="false"
+            android:parentActivityName=".HallDetail" />
+        <activity
+            android:name=".HallDetail"
+            android:exported="false"
+            android:parentActivityName=".Hall" />
+        <activity
+            android:name=".editProfile"
+            android:exported="false"
+            android:parentActivityName=".profile" />
+        <activity
+            android:name=".profile"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Hall"
+            android:exported="false"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.Hall_Booking.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreesn"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
